@@ -349,7 +349,7 @@
           <div class="column is-four-fifths">
             <h2 class="title is-3">Proposed Model</h2>
             <figure class="image">
-              <img src="static/images/model.png" alt="Diagram of the proposed neural network">
+              <img src="static/images/model.png" alt="Diagram of the proposed neural network AGFPNet">
             </figure>
             <p class="subtitle">
               A visualization of the proposed neural network architecture used for action and grasp feasibility prediction.
@@ -368,7 +368,7 @@
           <div class="columns is-centered">
             <div class="column is-half has-text-centered">
               <figure class="image"></figure>
-                <img src="static/images/reorder.png" alt="Benchmark 1">
+                <img src="static/images/reorder.png" alt="Reorder Benchmark">
               </figure>
                 <p class="subtitle"><strong>Reorder problem:</strong> Objects initially placed on a two-shelf cupboard must be moved to another cupboard in a different order, testing the algorithm's ability to handle grasp choices and infeasible placements under shelves.</p>
             </div>
@@ -376,7 +376,7 @@
           <div class="columns is-centered">
             <div class="column is-half has-text-centered">
               <figure class="image"></figure>
-                <img src="static/images/unpack.png" alt="Benchmark 2">
+                <img src="static/images/unpack.png" alt="Unpack Benchmark">
               </figure>
                 <p class="subtitle"><strong>Unpack problem:</strong> Objects initially placed on a tray-like surface must be unpacked and ordered into a cupboard. The challenge lies in selecting feasible grasps due to the proximity of objects and the restricted goal placements under a shelf, which disallow top grasps.</p>
             </div>
@@ -384,7 +384,7 @@
           <div class="columns is-centered">
             <div class="column is-half has-text-centered">
               <figure class="image"></figure>
-                <img src="static/images/swap.png" alt="Benchmark 3">
+                <img src="static/images/swap.png" alt="Swap Benchmark">
               </figure>
               <p class="subtitle"><strong>Swap problem:</strong> A set of objects are initially placed either on the table or on higher support surfaces, and the goal is to swap their poses. The challenge arises from the fact that the goal poses of objects are already occupied, requiring the use of intermediary placements to achieve the desired configuration.</p>
             </div>
@@ -392,7 +392,7 @@
           <div class="columns is-centered">
             <div class="column is-half has-text-centered">
               <figure class="image"></figure>
-                <img src="static/images/access.png" alt="Benchmark 3">
+                <img src="static/images/access.png" alt="Access Benchmark">
               </figure>
               <p class="subtitle"><strong>Access problem:</strong> The task involves moving a single object (red) to its goal placement while ensuring all other objects are returned to their initial positions. The challenge arises as each object blocks access to the next, requiring the robot to sequentially move blocking objects to temporary placements, position the red object, and then restore the moved objects in their original order.</p>
             </div>
@@ -400,7 +400,7 @@
           <div class="columns is-centered">
             <div class="column is-half has-text-centered">
               <figure class="image"></figure>
-                <img src="static/images/sort.png" alt="Benchmark 3">
+                <img src="static/images/sort.png" alt="Sort Benchmark">
               </figure>
                 <p class="subtitle"><strong>Sort problem:</strong> The task involves moving a set of objects from a shelf to one of two small tables based on their color. The challenge lies in placement sampling, as the planner must find feasible placements that allow all objects of the same color to fit on narrow surfaces. Additionally, the initial proximity of objects requires a specific order of movement. The problem is further complicated by the presence of blocking objects (orange) with unspecified goals on the tables.</p>
             </div>
@@ -424,21 +424,21 @@
             <!-- First image -->
             <div class="column is-one-third has-text-centered">
               <figure class="image">
-                <img src="static/images/results_reorder.png" alt="Result 1">
+                <img src="static/images/results_reorder.png" alt="Result on the Reorder Problem">
               </figure>
                 <p class="subtitle"><strong>Reorder Problem</strong></p>
             </div>
             <!-- Second image -->
             <div class="column is-one-third has-text-centered">
               <figure class="image">
-                <img src="static/images/results_unpack.png" alt="Result 2">
+                <img src="static/images/results_unpack.png" alt="Result on the Unpack Problem">
               </figure>
               <p class="subtitle"><strong>Unpack Problem</strong></p>
             </div>
             <!-- Third image -->
             <div class="column is-one-third has-text-centered">
               <figure class="image">
-                <img src="static/images/results_swap.png" alt="Result 3">
+                <img src="static/images/results_swap.png" alt="Result on the Swap Problem">
               </figure>
               <p class="subtitle"><strong>Swap Problem</strong></p>
             </div>
@@ -452,14 +452,14 @@
             <!-- Fourth image -->
             <div class="column is-half has-text-centered">
               <figure class="image">
-                <img src="static/images/results_access.png" alt="Result 4">
+                <img src="static/images/results_access.png" alt="Result on the Access Problem">
               </figure>
               <p class="subtitle"><strong>Access Problem</strong></p>
             </div>
             <!-- Fifth image -->
             <div class="column is-half has-text-centered">
               <figure class="image">
-                <img src="static/images/results_sort.png" alt="Result 5">
+                <img src="static/images/results_sort.png" alt="Result on the Sort Problem">
               </figure>
               <p class="subtitle"><strong>Sort Problem</strong></p>
             </div>
@@ -483,21 +483,21 @@
             <!-- First GIF -->
             <div class="column is-one-third has-text-centered">
               <figure class="image">
-                <img src="static/images/reorder5.gif" alt="Visualization 1">
+                <img src="static/images/reorder5.gif" alt="Visualization of the solution to the Reorder Problem">
               </figure>
               <p class="subtitle"><strong>Reorder Problem</strong></p>
             </div>
             <!-- Second GIF -->
             <div class="column is-one-third has-text-centered">
               <figure class="image">
-                <img src="static/images/unpack5.gif" alt="Visualization 2">
+                <img src="static/images/unpack5.gif" alt="Visualization of the solution to the Unpack Problem">
               </figure>
               <p class="subtitle"><strong>Unpack Problem</strong></p>
             </div>
             <!-- Third GIF -->
             <div class="column is-one-third has-text-centered">
               <figure class="image">
-                <img src="static/images/swap5.gif" alt="Visualization 3">
+                <img src="static/images/swap5.gif" alt="Visualization of the solution to the Swap Problem">
               </figure>
               <p class="subtitle"><strong>Swap Problem</strong></p>
             </div>
@@ -506,14 +506,14 @@
             <!-- Fourth GIF -->
             <div class="column is-half has-text-centered">
               <figure class="image">
-                <img src="static/images/access.gif" alt="Visualization 4">
+                <img src="static/images/access.gif" alt="Visualization of the solution to the Access Problem">
               </figure>
               <p class="subtitle"><strong>Access Problem</strong></p>
             </div>
             <!-- Fifth GIF -->
             <div class="column is-half has-text-centered">
               <figure class="image">
-                <img src="static/images/sort.gif" alt="Visualization 5">
+                <img src="static/images/sort.gif" alt="Visualization of the solution to the Sort Problem">
               </figure>
               <p class="subtitle"><strong>Sort Problem</strong></p>
             </div>
