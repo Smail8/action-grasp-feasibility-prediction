@@ -317,6 +317,7 @@
       <div class="container is-max-desktop">
         <div class="hero-body">
           <iframe width="100%" height="500px" src="https://www.youtube.com/embed/rhHO3fyEkis" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>      
+          <div style="margin-top: 20px;"></div> <!-- Added vertical space -->
           <h2 class="subtitle has-text-centered">
             Given a task and motion planning (TAMP) problem, our method leverages AGFP-Net, a multi-task neural network, to predict both action feasibility and the feasibility of various grasp types. These predictions are used as heuristics to guide the symbolic planner towards geometrically feasible solutions, significantly reducing the time spent on geometric planning. This approach enables the robot to solve complex manipulation tasks more efficiently, even when goals are not fully specified.
           </h2>
@@ -351,6 +352,7 @@
             <figure class="image">
               <img src="static/images/model.png" alt="Diagram of the proposed neural network AGFPNet">
             </figure>
+            <div style="margin-top: 20px;"></div> <!-- Added vertical space -->
             <p class="subtitle">
               A visualization of the proposed neural network architecture used for action and grasp feasibility prediction.
             </p>
@@ -370,7 +372,8 @@
               <figure class="image"></figure>
                 <img src="static/images/reorder.png" alt="Reorder Benchmark">
               </figure>
-                <p class="subtitle"><strong>Reorder problem:</strong> Objects initially placed on a two-shelf cupboard must be moved to another cupboard in a different order, testing the algorithm's ability to handle grasp choices and infeasible placements under shelves.</p>
+              <div style="margin-top: 20px;"></div> <!-- Added vertical space -->
+              <p class="subtitle"><strong>Reorder problem:</strong> Objects initially placed on a two-shelf cupboard must be moved to another cupboard in a different order, testing the algorithm's ability to handle grasp choices and infeasible placements under shelves.</p>
             </div>
           </div>
           <div class="columns is-centered">
@@ -378,7 +381,8 @@
               <figure class="image"></figure>
                 <img src="static/images/unpack.png" alt="Unpack Benchmark">
               </figure>
-                <p class="subtitle"><strong>Unpack problem:</strong> Objects initially placed on a tray-like surface must be unpacked and ordered into a cupboard. The challenge lies in selecting feasible grasps due to the proximity of objects and the restricted goal placements under a shelf, which disallow top grasps.</p>
+              <div style="margin-top: 20px;"></div> <!-- Added vertical space -->
+              <p class="subtitle"><strong>Unpack problem:</strong> Objects initially placed on a tray-like surface must be unpacked and ordered into a cupboard. The challenge lies in selecting feasible grasps due to the proximity of objects and the restricted goal placements under a shelf, which disallow top grasps.</p>
             </div>
           </div>
           <div class="columns is-centered">
@@ -386,6 +390,7 @@
               <figure class="image"></figure>
                 <img src="static/images/swap.png" alt="Swap Benchmark">
               </figure>
+              <div style="margin-top: 20px;"></div> <!-- Added vertical space -->
               <p class="subtitle"><strong>Swap problem:</strong> A set of objects are initially placed either on the table or on higher support surfaces, and the goal is to swap their poses. The challenge arises from the fact that the goal poses of objects are already occupied, requiring the use of intermediary placements to achieve the desired configuration.</p>
             </div>
           </div>
@@ -394,6 +399,7 @@
               <figure class="image"></figure>
                 <img src="static/images/access.png" alt="Access Benchmark">
               </figure>
+              <div style="margin-top: 20px;"></div> <!-- Added vertical space -->
               <p class="subtitle"><strong>Access problem:</strong> The task involves moving a single object (red) to its goal placement while ensuring all other objects are returned to their initial positions. The challenge arises as each object blocks access to the next, requiring the robot to sequentially move blocking objects to temporary placements, position the red object, and then restore the moved objects in their original order.</p>
             </div>
           </div>
@@ -402,7 +408,8 @@
               <figure class="image"></figure>
                 <img src="static/images/sort.png" alt="Sort Benchmark">
               </figure>
-                <p class="subtitle"><strong>Sort problem:</strong> The task involves moving a set of objects from a shelf to one of two small tables based on their color. The challenge lies in placement sampling, as the planner must find feasible placements that allow all objects of the same color to fit on narrow surfaces. Additionally, the initial proximity of objects requires a specific order of movement. The problem is further complicated by the presence of blocking objects (orange) with unspecified goals on the tables.</p>
+              <div style="margin-top: 20px;"></div> <!-- Added vertical space -->
+              <p class="subtitle"><strong>Sort problem:</strong> The task involves moving a set of objects from a shelf to one of two small tables based on their color. The challenge lies in placement sampling, as the planner must find feasible placements that allow all objects of the same color to fit on narrow surfaces. Additionally, the initial proximity of objects requires a specific order of movement. The problem is further complicated by the presence of blocking objects (orange) with unspecified goals on the tables.</p>
             </div>
           </div>
         </div>
